@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>lista de clases</h1>
+<div>
+ {% if alumnos %}
+        <ul>
+            {% for alumno in alumnos %}
+                <li>{{ alumno.nombre }}</li>
+            {% endfor %}
+        </ul>
+ {% else %}
+     <p>no existen datos</p>
+ {% endif %}
+</div>
+</body>
+</html>
