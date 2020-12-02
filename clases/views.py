@@ -9,7 +9,7 @@ def clases_views(request):
     clases= Clase.objects.all()
 
     for clase in clases:
-        response += clase.nombre
+        response += clase.materia
 
     return HttpResponse(response)
 
